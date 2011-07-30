@@ -88,7 +88,7 @@ window.onresize = CenterTable
   </tr>
   <center>
   <tr>
-    <td width="346" height="1" colspan="3"><IMG src="img/dataentryindia.jpg" width="346" height="178"></td>
+    <td width="346" height="1" colspan="3"><img src="img/dataentryindia.jpg" width="346" height="178"></td>
     <td width="285" height="1" bgcolor="#ededed">
 	  <form action = "Main.php" method="post" name="lform">
       <TABLE style="background-color: #ededed" width="279" height="122">
@@ -142,7 +142,7 @@ window.onresize = CenterTable
   </tr>
   <tr>
     <td class=CopyrightText width="633" height="26" colspan="4" bgcolor="#C6C6C6">
-      <p align="right">©2006 Meltronics Systemtech Pvt. Ltd.,India</td>
+      <p align="right">©2011 Meltronics Systemtech Pvt. Ltd.,India</td>
   </tr>
 </table>
 
