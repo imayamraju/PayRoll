@@ -10,16 +10,17 @@
 
 <font face="Times New Roman, Times, serif"><script >
 
-function SelectPage()
+function SelectPage(val)
 {
-	if(SelOption.value=='MSPL') 
-		window.navigate('Mel_Report.php?msg=Successfully Connection');
-	else if(SelOption.value=='ASPL')
-		window.navigate('Avi_Report.php?msg=Successfully Connection');
-	else if(SelOption.value=='MIPL')
-		window.navigate('MIPL_Report.php?msg=Successfully Connection');
-	else if(SelOption.value=='MBS')
-		window.navigate('MBS_Report.php?msg=Successfully Connection');
+
+	if(val=='MSPL') 
+		location.href='Mel_Report.php?msg=Successfully Connection';
+	else if(val=='ASPL')
+		location.href='Avi_Report.php?msg=Successfully Connection';
+	else if(val=='MIPL')
+		location.href='MIPL_Report.php?msg=Successfully Connection';
+	else if(val=='MBS')
+		location.href='MBS_Report.php?msg=Successfully Connection';
 }
 </script>
 
@@ -61,9 +62,9 @@ while($rows = mysql_fetch_array($result))
 		echo "<td class=header >Select the company:</td>";
 		echo "<td width='123'>";
 
-		echo "<p><select size='1' name='SelOption' onchange = 'SelectPage();'>";
+		echo "<p><select size='1' name='SelOption' onchange ='SelectPage(this.value);'>";
 		echo "<option >-Select Company-</option>";
-		echo "<option value = 'MSPL' >MELTRONICS</option>";
+		echo "<option value ='MSPL' >MELTRONICS</option>";
 		echo "<option value='ASPL' >AVITRONICS</option>";
 		echo "<option value='MIPL' >MELTRONICS INFOTECH</option>";
 		echo "<option value='MBS' >MELTRONICS BUSINESS</option>";
@@ -82,7 +83,7 @@ if( !$valid_user )
 {
 	mysql_free_result($result);
 	mysql_close($socket);
-	echo "<script> window.navigate('Index.php?msg=Successfully Connection');</script>";
+	echo "<script> location.href='Index.php?msg=Successfully Connection';</script>";
 	die("Invalid user!");
 	
 }
