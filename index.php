@@ -142,7 +142,7 @@ window.onresize = CenterTable
   </tr>
   <tr>
     <td class=CopyrightText width="633" height="26" colspan="4" bgcolor="#C6C6C6">
-      <p align="right">©2011 Meltronics Systemtech Pvt. Ltd.,India</td>
+      <p align="right">&copy; 2011 Meltronics Systemtech Pvt. Ltd.,India</td>
   </tr>
 </table>
 
