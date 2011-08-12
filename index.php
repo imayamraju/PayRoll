@@ -131,7 +131,7 @@ window.onresize = CenterTable
   </center>
     <td width="739" height="29" bgcolor="#DDDDDD" align="center" colspan="3">
       <p align="left"><A class=Legal  
-      href="http://www.meltronicsgroup.com" onclick ="alert('Please connect to internet');">
+      href="http://www.meltronicsgroup.com" >
 	  www.meltronicsgroup.com</A>  <font color="#666666"> |&nbsp;</font><A class=Legal  
       href="http://www.meltronicsgroup.com/about.html" onclick = "alert('Please connect to internet');" 
       >About Us</A>  <font color="#666666">|</font> <A class=Legal  
